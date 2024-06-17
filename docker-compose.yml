@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  python-multistage:
+    container_name: python-multistage-building-container
+    image: "python-multistage-building"
+    build:
+      context: .
+      dockerfile: ./container/Dockerfile
+    volumes:
+      - "./python/src:/home/app/src"
+      - "./python/requirements.txt:/home/app/requirements.txt"
+    tty: true

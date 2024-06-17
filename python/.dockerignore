@@ -1,0 +1,26 @@
+# directories
+**/__pycache__
+.mypy_cache
+.pytest_cache
+.ruff_cache
+.venv
+.vscode
+db
+tests
+
+# files
+.coverage
+.dockerignore
+src/.env
+.env.docker
+.env.sample
+.gitignore
+.isort.cfg
+Dockerfile
+keyfile.json
+mypy.ini
+Pipfile
+proxy.json
+pytest.ini
+README.md
+ruff.toml
